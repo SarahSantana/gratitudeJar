@@ -6,11 +6,36 @@
 .wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  height: 100vh;
 }
 
 h1 {
-  
+  margin: 0;
+  width: 200px;
+  text-align: center;
+  background: #c0fffe;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-size: 18px;
+  box-sizing: border-box;
+  transform: rotate(-22deg);
+  color: #a600ff;
+  border-radius: 0 0 34px 0;
+
+  &:after {
+    content: "";
+    background-image: linear-gradient(130deg, #67ecea 50%, #67ecea 50%);
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 1px;
+    right: 0px;
+    border-radius: 0 0 34px 0;
+  }
 }
 
 .jar {
