@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'gratitude-jar';
 
-  comprimentos = [
+  boasVindas = [
     'e aí xuxu?',
     'qual a boa bebê?',
     'Bem-Vindo lindeza!',
