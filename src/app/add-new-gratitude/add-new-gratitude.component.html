@@ -5,6 +5,14 @@
     <div class="tail-right"></div>
   </h3>
   <div class="wrapper-lapis">
-    <div class="lapis"></div>
+    <div 
+      class="lapis"
+      (click)="openModal()"
+    ></div>
   </div>
 </div>
+
+<app-modal-new-gratitude
+  [open]="isOpenModal"
+>
+</app-modal-new-gratitude>

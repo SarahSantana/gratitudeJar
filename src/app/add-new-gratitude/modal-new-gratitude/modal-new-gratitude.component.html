@@ -1,1 +1,19 @@
-modal
+<div
+  class="wrapper-modal"
+  [class.close]="!open"
+>
+  <div class="modal">
+    <div
+      class="close-it"
+      (click)="closeModal()"
+    >Fechar</div>
+    <h3>Manda ae sua nota de gratidão: </h3>
+    <form>
+      <div class="float-label">
+        <label for="gratitude">Hoje sou grato por...</label>
+        <textarea name="gratitude"></textarea>
+      </div>
+      <button type="submit">Colocar no potinho</button>
+    </form>
+  </div>
+</div>

@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './add-new-gratitude.component.html',
   styleUrls: ['./add-new-gratitude.component.scss']
 })
-export class AddNewGratitudeComponent { }
+export class AddNewGratitudeComponent {
+
+  isOpenModal = false;
+
+  openModal(): void {
+    this.isOpenModal = true;
+  }
+}
