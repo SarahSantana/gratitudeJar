@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModalService } from '../shared/modal/modal.service';
 
 @Component({
   selector: 'app-add-new-gratitude',
@@ -7,9 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AddNewGratitudeComponent {
 
-  isOpenModal = false;
+  constructor(
+    private modalService: ModalService
+  ) { }
 
   openModal(): void {
-    this.isOpenModal = true;
+    this.modalService.toggle(true, 'ModalNewGratitude');
   }
 }
